@@ -10,22 +10,22 @@ About PowerShell
 
 *Source: Interview with Jeffrey Snover, PowerShell Inventor* 
 
-Why Learn PowerShell?
+## Why Learn PowerShell?
 PowerShell is an essential tool for:
-Automating repetitive tasks.
-Managing and configuring systems.
-Working with files, processes, and services.
-Interacting with APIs and web services.
-Writing scripts to solve complex problems.
+1. Automating repetitive tasks.
+2. Managing and configuring systems.
+3. Working with files, processes, and services.
+4. Interacting with APIs and web services.
+5. Writing scripts to solve complex problems.
 
-PowerShell Features and Terms
-Cmdlets: Lightweight commands that perform specific functions.
-Scripting: Write and execute scripts, series of commands, to automate tasks.
-Pipeline: Chain commands together to pass data between them using |.
-Remote Management: Execute commands on remote systems.
-Modules: Extend functionality with additional cmdlets and scripts.
-Extensibility: Create custom functions, modules, and scripts.
-Cross-Platform: PowerShell Core runs on Windows, macOS, and Linux.
+## PowerShell Features and Terms
+* **Cmdlets**: Lightweight commands that perform specific functions.
+* **Scripting**: Write and execute scripts, series of commands, to automate tasks.
+* **Pipeline**: Chain commands together to pass data between them using |.
+* **Remote Management**: Execute commands on remote systems.
+* **Modules**: Extend functionality with additional cmdlets and scripts.
+* **Extensibility**: Create custom functions, modules, and scripts.
+* **Cross-Platform**: PowerShell Core runs on Windows, macOS, and Linux.
 
 PowerShell History
 
