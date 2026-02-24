@@ -1,8 +1,14 @@
+resume.md 
+
+02/23/2026
+
+
+![Image](.\Face.png)
 # Emanuel Atallah
 Montreal, Quebec / 438-389-7911 / emanuelatallah@gmail.com
 
 ### Professional Summary
-
+Customer service worker with great communication skills and adaptability. Can communicate with both french and english speakers to satisfy their needs and questions regarding the salad bar. Works well under pressure and can still perform at a high standard.
 
 ### Work History
 **Salad bar worker**, 02/2023 to Current _Scores - Dorval, Quebec_
