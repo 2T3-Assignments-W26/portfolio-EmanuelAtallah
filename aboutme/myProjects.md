@@ -105,3 +105,33 @@ The site includes:
 * Navigation menu
 
 The objective of this project was to understand how content managment systems work and how to build and manage a professional website.
+
+### Technologies used
+* WordPress
+* WordPress Themes
+* WordPress Plugins (e.g. contact form plugin)
+
+### What I configured (Instead of code snippets)
+Since no custom code was written, the technical work involved:
+* Selecting and customizing a theme
+* Creating pages and organizing site navigation
+* Installing and configuring plugins
+* Managin media (images, branding content)
+* Setting up a contact form
+* Adjusting layout and styling through WordPress settings
+
+### Screenshots from the project
+These are a couple screenshots of the layout and contact page of the website
+![Image](.\Wordpresshomepage.png)
+![Image](.\Wordpresscontact1.png)
+![Image](.\Wordpresscontact2.png)
+
+### What I learned
+Through this project, I learned how a Content Management System like Wordpress works. I now understand how websites can be built without coding by using themes and plugins.
+
+I also learned:
+* How to structure content effeciently
+* How to configure plugins to extend functionality
+* The diffrenc between frontend design and backend management
+
+### Live Website Link
