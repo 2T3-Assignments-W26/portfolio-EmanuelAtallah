@@ -18,3 +18,76 @@ The game increases in difficulty as more monsters are added after each round, cr
 * .NET Console Application
   
 ### Code Snippets from the project
+```C#
+static void KillRandomMonster(int plateIndex)
+{
+    if (currentMonsterCount <= 0) return;
+
+    // pick a random active monster index
+    int found = rng.Next(0, currentMonsterCount);
+
+    // remember the tile to clear (the monster being removed)
+    int removedX = monsterX[found];
+    int removedY = monsterY[found];
+
+    // remove monster at index 'found' by swapping with last active monster
+    int last = currentMonsterCount - 1;
+    if (found != last)
+    {
+        monsterX[found] = monsterX[last];
+        monsterY[found] = monsterY[last];
+        oldmonsterX[found] = oldmonsterX[last];
+        oldmonsterY[found] = oldmonsterY[last];
+        monsterMoveInterval[found] = monsterMoveInterval[last];
+        monsterMoveCounter[found] = monsterMoveCounter[last];
+    }
+
+    // clear last slot
+    monsterX[last] = -1;
+    monsterY[last] = -1;
+    oldmonsterX[last] = -1;
+    oldmonsterY[last] = -1;
+    monsterMoveInterval[last] = 0;
+    monsterMoveCounter[last] = 0;
+
+    currentMonsterCount = Math.Max(0, currentMonsterCount - 1);
+
+    // ensure the removed monster's glyph is erased from the console (only if not dashboard)
+    if (removedY != dashboardY && removedX >= 0 && removedX < Console.WindowWidth && removedY >= 0 && removedY < Console.WindowHeight)
+    {
+        Console.SetCursorPosition(removedX, removedY);
+        Console.Write(" ");
+    }
+}
+```
+```C#
+static void cleanupmonsterposition()
+{
+    for (int i = 0; i < currentMonsterCount; i++)
+    {
+        if (oldmonsterX[i] >= 0 && oldmonsterX[i] < Console.WindowWidth && oldmonsterY[i] >= dashboardY + 1 && oldmonsterY[i] < Console.WindowHeight)
+        {
+        Console.SetCursorPosition(oldmonsterX[i], oldmonsterY[i]);
+        Console.Write(" ");
+        }
+        if (monsterX[i] >= 0 && monsterX[i] < Console.WindowWidth && monsterY[i] >= dashboardY + 1 && monsterY[i] < Console.WindowHeight)
+        {
+                    Console.SetCursorPosition(monsterX[i], monsterY[i]);
+                    Console.Write(monsterchar);
+        }
+    }
+}
+```
+### Screenshots from the project
+
+![Image](.\Startupscreen.png)
+![Image](.\Gameplay.png)
+
+### What I learned
+Through this project, I learned how to build game mechanics using loops and conditional logic. I improved my understanding of object-oriented programming by managing monsters, player mouvement, and game states seperately.
+
+I also learned how to:
+* Handle real-time input using keyboard controls
+* Manage collision detection
+* Implement increasing difficulty through enemy spawning logic
+* Control game flow with rounds and life systems
