@@ -91,3 +91,17 @@ I also learned how to:
 * Manage collision detection
 * Implement increasing difficulty through enemy spawning logic
 * Control game flow with rounds and life systems
+
+# Project 2: Business website (fictional) built from WordPress
+
+### Project Description
+This project is a fully functional business website using WordPress. The website was created using built-in themes and plugins without writing custom HTML or CSS
+
+The site includes:
+* Home page
+* About page
+* Services page
+* Contact form
+* Navigation menu
+
+The objective of this project was to understand how content managment systems work and how to build and manage a professional website.
